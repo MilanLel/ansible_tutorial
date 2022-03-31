@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: create AlCapone user
+    tags: always
+    user:
+      name: AlCapone
+      groups: root
