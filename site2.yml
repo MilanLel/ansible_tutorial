@@ -8,7 +8,7 @@
     tags: httpd
     copy:
       src: file2.html
-      dest: /var/www/html/index.html
+      dest: /var/www/html/index2.html
       owner: root
       group: root
       mode: 0644

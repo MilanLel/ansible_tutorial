@@ -4,23 +4,23 @@
   become: true
   tasks:
 
-  - name: create AlCapone user
+  - name: create MickeyD user
     tags: always
     user:
-      name: AlCapone
+      name: MickeyD
       groups: root
 
-  - name: add ssh key for AlCapone
+  - name: add ssh key for MickeyD
     tags: always
     authorized_key:
-      user: AlCapone
+      user: MickeyD
       key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIK+u8SO4BL7tw8cGjeQw26ZV0OUxK/J3R8IE4Kt+OWb ansible"
 
-  - name: add sudoers file for AlCapone
+  - name: add sudoers file for MickeyD
     tags: always
     copy:
-      src: sudoer_AlCapone
-      dest: /etc/sudoers.d/AlCapone
+      src: sudoer_MickeyD
+      dest: /etc/sudoers.d/MickeyD
       owner: root
       group: root
       mode: 0440

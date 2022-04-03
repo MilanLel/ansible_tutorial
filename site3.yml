@@ -4,8 +4,8 @@
   become: true
   tasks:
 
-  - name: create AlCapone user
+  - name: create MickeyD user
     tags: always
     user:
-      name: AlCapone
+      name: MickeyD
       groups: root
